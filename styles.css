@@ -1,0 +1,66 @@
+/* ================================
+   Part 1: CSS Transitions & Animations
+   ================================ */
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Animated Box (transitions + hover) */
+#animatedBox {
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  /* Transition for smooth hover effects */
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+/* Hover Effect */
+#animatedBox:hover {
+  background-color: #2196F3;
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Keyframes Animation (pulse effect) */
+@keyframes pulse {
+  0%   { transform: scale(1); background-color: #ff9800; }
+  50%  { transform: scale(1.2); background-color: #f44336; }
+  100% { transform: scale(1); background-color: #ff9800; }
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e68900;
+}
